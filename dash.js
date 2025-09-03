@@ -45,7 +45,7 @@
         // Load admin profile data
         async function loadUserStatistics() {
     const token = localStorage.getItem('token');
-    const response = await fetch('http://localhost:5000/api/stats/users', {
+    const response = await fetch('https://leopards-backend.onrender.com/api/stats/users', {
         headers: {
             'Authorization': `Bearer ${token}`
         }
@@ -66,7 +66,7 @@ function renderUserStatistics() {
         // Load statistics data
         async function loadStatistics() {
             const token = localStorage.getItem('token');
-            const response = await fetch('http://localhost:5000/api/stats/registrations', {
+            const response = await fetch('https://leopards-backend.onrender.com/api/stats/registrations', {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
@@ -82,7 +82,7 @@ function renderUserStatistics() {
         // Load recent registrations
         async function loadRecentRegistrations() {
             const token = localStorage.getItem('token');
-            const response = await fetch('http://localhost:5000/api/stats/recent', {
+            const response = await fetch('https://leopards-backend.onrender.com/api/stats/recent', {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
@@ -98,7 +98,7 @@ function renderUserStatistics() {
         // Load recent messages
         async function loadRecentMessages() {
             const token = localStorage.getItem('token');
-            const response = await fetch('http://localhost:5000/api/admin/contact-submissions?limit=5', {
+            const response = await fetch('https://leopards-backend.onrender.com/api/admin/contact-submissions?limit=5', {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
@@ -119,7 +119,7 @@ async function deleteMessage(messageId) {
 
     try {
         const token = localStorage.getItem('token');
-        const response = await fetch(`http://localhost:5000/api/admin/contact-submissions/${messageId}`, {
+        const response = await fetch(`https://leopards-backend.onrender.com/api/admin/contact-submissions/${messageId}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${token}`

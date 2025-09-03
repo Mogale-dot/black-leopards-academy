@@ -93,7 +93,7 @@ document.getElementById('forgotPasswordForm').addEventListener('submit', async (
         button.disabled = true;
         button.textContent = 'Sending...';
 
-        const response = await fetch('http://localhost:5000/api/auth/forgot-password', {
+        const response = await fetch('https://leopards-backend.onrender.com/api/auth/forgot-password', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
