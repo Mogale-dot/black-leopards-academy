@@ -906,7 +906,8 @@ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.3s; 
+  display: none;
 }
 
 
@@ -2654,6 +2655,7 @@ margin-top: 50px;
            mask-image: linear-gradient(to right, black 100%, transparent 100%);
            -webkit-mask-image: linear-gradient(to right, black 100%, transparent 100%);
 } 
+.logout-btn
 
 /* profile  page  ---------------------------------------------------------------------------------- */  
 .office-container {

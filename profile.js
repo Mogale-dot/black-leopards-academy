@@ -15,7 +15,7 @@
   const players = {
     1: {
       name: "Thato Masipa",
-      img: "images/thato.jpg",
+      img: "images/thato10.jpg",
       goals: 0,
       assists: 0,
       matches: 0,
