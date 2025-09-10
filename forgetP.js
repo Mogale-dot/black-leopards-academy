@@ -105,7 +105,7 @@ document.getElementById('forgotPasswordForm').addEventListener('submit', async (
 
         if (!response.ok) throw new Error(data.error || 'Failed to send reset link');
 
-        showMessage(messageEl, 'If an account exists with this email, you will receive a reset link', 'success');
+        showMessage(messageEl, 'We have sent you a reset link', 'success');
     } catch (error) {
         showMessage(messageEl, error.message, 'error');
     } finally {
