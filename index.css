@@ -1045,7 +1045,8 @@ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     transform: scaleX(.2);
     opacity: .4;
   }
-}
+} 
+
 
 .shadow:nth-child(4) {
   left: 45%;
@@ -1206,9 +1207,9 @@ margin-top: 5px;
 
 .slideshow-container {
   width: 100%;
-  height: 76vh;
-  max-height: 800px;
-  min-height: 400px;
+  height: 79vh;
+  max-height: 850px;
+  min-height: 450px;
   position: relative;
   overflow: hidden;
   z-index: 100;
@@ -1799,7 +1800,7 @@ margin-top: 5px;
 }
 .news-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 30px;
   justify-content: center;
 }
@@ -3653,6 +3654,7 @@ footer {
     order: 2;
   } 
 }
+ 
 
 
   
