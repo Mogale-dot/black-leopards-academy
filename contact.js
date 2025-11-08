@@ -37,16 +37,13 @@ if (contactForm) {
             }
             
             // Show success message
-            submitBtn.querySelector('.text').textContent = 'Message Sent!';
+            submitBtn.querySelector('.text').textContent = 'Message Sent !';
             
             // Clear form fields
             document.getElementById('contactForm').reset();
             
             // Reset button after 3 seconds
-            setTimeout(() => {
-                submitBtn.querySelector('.text').textContent = 'Submit';
-                submitBtn.disabled = false;
-            }, 3000);
+          
             
         } catch (error) {
             console.error('Form submission error:', error);
@@ -55,10 +52,7 @@ if (contactForm) {
             submitBtn.querySelector('.text').textContent = 'Error - Try Again';
             
             // Reset button after 3 seconds
-            setTimeout(() => {
-                submitBtn.querySelector('.text').textContent = 'times Up!  please   try  again ';
-                submitBtn.disabled = false;
-            }, 3000);
+          
         }
     });
 }
